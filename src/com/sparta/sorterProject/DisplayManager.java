@@ -1,20 +1,26 @@
 package com.sparta.sorterProject;
 
-public class DisplayManager {
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.Arrays;
+
+public class DisplayManager extends DriverClass{
+
+    ArrayGen arrayGen = new ArrayGen();
+    DriverClass driverData = new DriverClass();
+
 
     private static final String titleMain = // displays the int text for user
         "\nSORTING PROJECT \n"+
-                    "\t**********************************************\n" +
-                    "\t|                                            |\n" +
-                    "\t| Please pick an int number for the array    |\n" +
-                    "\t|                                            |\n" +
-                    "\t**********************************************\n" ;
+                    "\t************************************************\n" +
+                    "\t| Please pick an int number for the array size |\n" +
+                    "\t************************************************\n" ;
 
     private static final String displaySorts = // display the sorts for user
             "\nSORTING PROJECT \n"+
                     "\t**************************************************\n" +
                     "\t|                                                |\n" +
-                    "\t| Please pick a number between 0-5 for the array |\n" +
+                    "\t|  Pick a number between 0-5 for the sort wanted |\n" +
                     "\t|                                                |\n" +
                     "\t| Type: 0 for Bubble sort                        |\n" +
                     "\t| Type: 1 for Merge sort                         |\n" +
@@ -24,6 +30,7 @@ public class DisplayManager {
                     "\t| Type: 5 for Binary Tree based sort             |\n" +
                     "\t**************************************************\n" ;
 
+
     public String displayTitle(){
         return titleMain;
     }
@@ -31,5 +38,6 @@ public class DisplayManager {
     public String displaySorts(){
         return displaySorts;
     }
+
 
 }

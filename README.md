@@ -1,5 +1,8 @@
 # Bahir Sorter Project
 
+### Table of Contents
+- ###### Block Diagram
+
 ### Project Purpose
 **To create a new project that will incorporate the Bubble sort you’ve already done and a new Merge sorts algorithm.**
 
@@ -22,6 +25,11 @@ At least implement SortManager and DisplayManager classes to separate out these 
 - [ ] User interface
 - [ ] Create the array of int using user input
 - [ ] Displays the output of the sorted array and time
+
+#### ArrayGen class
+- [ ] generates a random array
+- [ ] takes the user input of size of array
+- [ ] return the array
 
 #### SORTING classes
 - [ ] Sort an array of int in a method
