@@ -3,11 +3,12 @@ package com.sparta.sorterProject;
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
-public class DisplayManager extends DriverClass{
+import static java.lang.System.in;
 
-    ArrayGen arrayGen = new ArrayGen();
-    DriverClass driverData = new DriverClass();
+public class DisplayManager{
+
 
 
     private static final String titleMain = // displays the int text for user
@@ -31,13 +32,26 @@ public class DisplayManager extends DriverClass{
                     "\t**************************************************\n" ;
 
 
-    public String displayTitle(){
+    public static String displayTitle(){
         return titleMain;
+    }
+
+    public static int[] displayArray(){
+        ArrayGen arrayGen = new ArrayGen();
+        Scanner scanner = new Scanner(in);
+        System.out.println(displayTitle());
+        int arrayLength = Integer.parseInt(scanner.next());
+        int[] arrayBefore = arrayGen.arrayGen(arrayLength);
+        System.out.println(Arrays.toString(arrayBefore));
+
+        return arrayBefore;
     }
 
     public String displaySorts(){
         return displaySorts;
     }
+
+
 
 
 }

@@ -1,9 +1,13 @@
 package com.sparta.sorterProject;
 
-public class BubbleSort {
+import java.sql.Driver;
+import java.util.Arrays;
 
-    public static void bubbleSort(double[] arr){
-        double temp = 0;
+public class BubbleSort implements SortManager{
+
+    public static String bubbleSort(int[] arr){
+        // maybe add time before
+        int temp = 0;
         int n = arr.length;
         for(int i=0; i<n; i++){
             for(int j=1; j<=(n-1); j++){
@@ -14,5 +18,13 @@ public class BubbleSort {
                 }
             }
         }
+        // add time after
+        return Arrays.toString(arr);
+    }
+
+    @Override
+    public void displaySortedArr() {
+        System.out.println("The sorted array using Bubble sort: ");
+        //DISPLAY SORTED ALGO
     }
 }
