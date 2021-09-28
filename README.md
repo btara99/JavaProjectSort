@@ -17,3 +17,13 @@ At least implement SortManager and DisplayManager classes to separate out these 
 
 #### Block Diagram
 ![Block diagram](JavaSortAPPBlockDiagram.png)
+
+#### Driver class
+- [ ] User interface
+- [ ] Create the array of int using user input
+- [ ] Displays the output of the sorted array and time
+
+#### SORTING classes
+- [ ] Sort an array of int in a method
+- [ ] create necessary variables in private if needed
+- [ ] record the time taken for the sort
