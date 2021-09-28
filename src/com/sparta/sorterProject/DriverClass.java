@@ -18,6 +18,8 @@ public class DriverClass {
         System.out.println(Arrays.toString(arrayGen.arrayGen(arrayLength)));
 //        System.out.println(displayData.displaySorts());
 
+        System.out.println();
+
 
 
     }
