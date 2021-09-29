@@ -18,7 +18,8 @@ public class DriverClass {
 //        int arrayLength = Integer.parseInt(scanner.next());
 //        int[] arrayBefore = arrayGen.arrayGen(arrayLength);
 //        System.out.println(Arrays.toString(arrayBefore));
-        displayData.displayArray();
+        //displayData.displayArray();
+       // System.out.println(displayData.displaySorts());
 
         int sortType = 0; // TAKE INPUT FROM USER
 
@@ -30,7 +31,6 @@ public class DriverClass {
         }
 
        //System.out.println(displayData.displaySorts());
-        //System.out.println(bubbleSort.bubbleSort(arrayBefore));
 
 
 

@@ -24,8 +24,10 @@ public class BubbleSort implements SortManager{
     @Override
     public void displaySortedArr() {
         //DISPLAY SORTED ARRAY
-        //System.out.println("The sorted array using Bubble sort: " + bubbleSort(arrayBefore));
+        long startTime = System.nanoTime();
         System.out.println("The sorted array using Bubble sort: " + bubbleSort(displayData.displayArray()));
+        long elapsedTime = System.nanoTime() - startTime;
+        System.out.println("The time taken for Bubble sort: " + elapsedTime);
 
     }
 }
