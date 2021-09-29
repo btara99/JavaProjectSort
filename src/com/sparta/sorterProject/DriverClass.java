@@ -10,29 +10,26 @@ public class DriverClass {
     public static void main(String[] args) {
         SortFactory sortFactory =  new SortFactory();
         DisplayManager displayData = new DisplayManager();
-//        ArrayGen arrayGen = new ArrayGen();
-//        BubbleSort bubbleSort = new BubbleSort();
-//        Scanner scanner = new Scanner(in);
-        //Display the message to the user for array creation
-//        System.out.println(displayData.displayTitle());
-//        int arrayLength = Integer.parseInt(scanner.next());
-//        int[] arrayBefore = arrayGen.arrayGen(arrayLength);
-//        System.out.println(Arrays.toString(arrayBefore));
-        //displayData.displayArray();
-       // System.out.println(displayData.displaySorts());
 
-        int sortType = 0; // TAKE INPUT FROM USER
 
-        switch(sortType){
-            case 0:
+        System.out.println(displayData.displaySorts());
+        try{
+            Scanner scanner = new Scanner(in);
+            int sortType= Integer.parseInt(scanner.next());
+            switch(sortType){
+                case 0:
                 SortManager bubbleSortDisplay = sortFactory.getSort(0);
                 bubbleSortDisplay.displaySortedArr();
+                break;
+
+            }
 
         }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
 
-       //System.out.println(displayData.displaySorts());
-
-
+        //System.out.println(displayData.displaySorts());
 
     }
 

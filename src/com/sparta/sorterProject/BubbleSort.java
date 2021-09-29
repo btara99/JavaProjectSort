@@ -4,8 +4,8 @@ import java.sql.Driver;
 import java.util.Arrays;
 
 public class BubbleSort implements SortManager{
-    DisplayManager displayData = new DisplayManager();
 
+    DisplayManager displayData = new DisplayManager();
     public static String bubbleSort(int[] arr){
         int temp = 0;
         int n = arr.length;
@@ -24,10 +24,10 @@ public class BubbleSort implements SortManager{
     @Override
     public void displaySortedArr() {
         //DISPLAY SORTED ARRAY
-        long startTime = System.nanoTime();
+        double startTime = System.nanoTime();
         System.out.println("The sorted array using Bubble sort: " + bubbleSort(displayData.displayArray()));
-        long elapsedTime = System.nanoTime() - startTime;
-        System.out.println("The time taken for Bubble sort: " + elapsedTime);
+        double elapsedTime = System.nanoTime() - startTime;
+        System.out.println("The time taken for Bubble sort: " + (double)(elapsedTime/1000000000) + " Seconds");
 
     }
 }

@@ -34,6 +34,11 @@ public class DisplayManager{
         return titleMain;
     }
 
+    public String displaySorts(){
+        return displaySorts;
+    }
+
+
     public static int[] displayArray(){
         ArrayGen arrayGen = new ArrayGen();
         Scanner scanner = new Scanner(in);
@@ -45,9 +50,6 @@ public class DisplayManager{
         return arrayBefore;
     }
 
-    public String displaySorts(){
-        return displaySorts;
-    }
 
 
 
