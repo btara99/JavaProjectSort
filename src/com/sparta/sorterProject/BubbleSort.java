@@ -4,9 +4,9 @@ import java.sql.Driver;
 import java.util.Arrays;
 
 public class BubbleSort implements SortManager{
+    DisplayManager displayData = new DisplayManager();
 
     public static String bubbleSort(int[] arr){
-        // maybe add time before
         int temp = 0;
         int n = arr.length;
         for(int i=0; i<n; i++){
@@ -18,13 +18,14 @@ public class BubbleSort implements SortManager{
                 }
             }
         }
-        // add time after
         return Arrays.toString(arr);
     }
 
     @Override
     public void displaySortedArr() {
-        System.out.println("The sorted array using Bubble sort: ");
-        //DISPLAY SORTED ALGO
+        //DISPLAY SORTED ARRAY
+        //System.out.println("The sorted array using Bubble sort: " + bubbleSort(arrayBefore));
+        System.out.println("The sorted array using Bubble sort: " + bubbleSort(displayData.displayArray()));
+
     }
 }

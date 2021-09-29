@@ -20,7 +20,7 @@ public class DriverClass {
 //        System.out.println(Arrays.toString(arrayBefore));
         displayData.displayArray();
 
-        int sortType = 0; //MAKE THIS TAKE INPUT FROM USER
+        int sortType = 0; // TAKE INPUT FROM USER
 
         switch(sortType){
             case 0:

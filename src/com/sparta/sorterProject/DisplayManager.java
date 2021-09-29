@@ -10,7 +10,6 @@ import static java.lang.System.in;
 public class DisplayManager{
 
 
-
     private static final String titleMain = // displays the int text for user
         "\nSORTING PROJECT \n"+
                     "\t************************************************\n" +
