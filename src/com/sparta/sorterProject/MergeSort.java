@@ -45,8 +45,6 @@ public class MergeSort implements SortManager {
     }
     
 
-
-
     @Override
     public void displaySortedArr() {
         double startTime = System.nanoTime();

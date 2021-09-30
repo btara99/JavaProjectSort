@@ -8,12 +8,15 @@ public class SortFactory {
         else if(typeSort == 1) {
             return new MergeSort();
         }
-//
-//        } else if(typeSort == 2)){
-//            return new ();
+        else if(typeSort == 2){
+            return new QuickSort();
+        }
+//     else if(typeSort == 3){
+//            return new InsertionSort();
 //        }
         return null;
     }
-
 }
+
+
 

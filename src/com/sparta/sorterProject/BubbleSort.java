@@ -1,6 +1,5 @@
 package com.sparta.sorterProject;
 
-import java.sql.Driver;
 import java.util.Arrays;
 
 public class BubbleSort implements SortManager{
