@@ -1,5 +1,7 @@
 package com.sparta.sorterProject;
 
+import java.util.Arrays;
+
 public class MergeSort implements SortManager {
     DisplayManager displayData = new DisplayManager();
     public static String mergeSort(int[] arr,int n) {
@@ -21,7 +23,7 @@ public class MergeSort implements SortManager {
         mergeSort(r, n - mid);
 
         merge(arr, l, r, mid, n - mid);
-        return arr.toString();
+        return Arrays.toString(arr);
     }
     public static void merge(int[] arr, int[] l, int[] r, int left, int right) {
 
@@ -48,8 +50,7 @@ public class MergeSort implements SortManager {
     @Override
     public void displaySortedArr() {
         double startTime = System.nanoTime();
-        System.out.println(mergeSort(DisplayManager.displayArray(),1));
-//        System.out.println(new StringBuilder().append("The sorted array using Merge sort: ").append(mergeSort(DisplayManager.displayArray(), 5)));
+        System.out.println("The sorted array using Merge sort: " + mergeSort(DisplayManager.displayArray(),1));
         double elapsedTime = System.nanoTime() - startTime;
         System.out.println("The time taken for Merge sort: " + (double)(elapsedTime/1000000000) + " Seconds");
     }
