@@ -24,6 +24,11 @@ public class DriverClass {
                     mergeSortDisplay.displaySortedArr();
                     break;
 
+                case 2:
+                    SortManager quickSortDisplay = sortFactory.getSort(2);
+                    quickSortDisplay.displaySortedArr();
+                    break;
+
                 default:
                     System.out.println("Please select a number between 0-5");
                     break;

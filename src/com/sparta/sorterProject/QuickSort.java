@@ -5,44 +5,68 @@ import java.util.Arrays;
 public class QuickSort implements SortManager {
     DisplayManager displayData = new DisplayManager();
 
-    public void quickSort(int arr[], int begin, int end) {
-       begin = 0;
-       end = arr.length;
+    private int[] numbers;
+    private int number;
 
-        if (begin < end) {
-            int partitionIndex = partition(arr, begin, end);
-
-            quickSort(arr, begin, partitionIndex-1);
-            quickSort(arr, partitionIndex+1, end);
+    public String sort(int[] arr) {
+        // check for empty or null array
+        if (arr ==null || arr.length==0){
+            return null;
         }
-        System.out.println(arr);
+        this.numbers = arr;
+        number = arr.length;
+        quicksort(0, number - 1);
+        return Arrays.toString(arr);
     }
 
-    private int partition(int arr[], int begin, int end) {
-        int pivot = arr[end];
-        int i = (begin-1);
+    private void quicksort(int low, int high) {
+        int i = low, j = high;
+        // Get the pivot element from the middle of the list
+        int pivot = numbers[low + (high-low)/2];
 
-        for (int j = begin; j < end; j++) {
-            if (arr[j] <= pivot) {
+        // Divide into two lists
+        while (i <= j) {
+            // If the current value from the left list is smaller than the pivot
+            // element then get the next element from the left list
+            while (numbers[i] < pivot) {
                 i++;
-                int swapTemp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = swapTemp;
+            }
+            // If the current value from the right list is larger than the pivot
+            // element then get the next element from the right list
+            while (numbers[j] > pivot) {
+                j--;
+            }
+
+            // If we have found a value in the left list which is larger than
+            // the pivot element and if we have found a value in the right list
+            // which is smaller than the pivot element then we exchange the
+            // values.
+            // As we are done we can increase i and j
+            if (i <= j) {
+                exchange(i, j);
+                i++;
+                j--;
             }
         }
-
-        int swapTemp = arr[i+1];
-        arr[i+1] = arr[end];
-        arr[end] = swapTemp;
-
-        return i+1;
+        // Recursion
+        if (low < j)
+            quicksort(low, j);
+        if (i < high)
+            quicksort(i, high);
     }
+
+    private void exchange(int i, int j) {
+        int temp = numbers[i];
+        numbers[i] = numbers[j];
+        numbers[j] = temp;
+    }
+
+
 
     public void displaySortedArr() {
         double startTime = System.nanoTime();
-       // quickSort(displayData.displayArray(), 0, 2);
-        System.out.println("The sorted array using Quick sort: ");
+        System.out.println("The sorted array using Quick sort: " + sort(DisplayManager.displayArray()));
         double elapsedTime = System.nanoTime() - startTime;
-        System.out.println("The time taken for Quick sort: " + (double)(elapsedTime/1000000000) + " Seconds");
+        System.out.println("The time taken for Quick sort: " + (elapsedTime/1000000000) + " Seconds");
     }
 }
