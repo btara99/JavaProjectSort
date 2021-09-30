@@ -33,6 +33,16 @@ public class DriverClass {
                     quickSortDisplay.displaySortedArr();
                     break;
 
+                case 3:
+                    SortManager insertionSortDisplay = sortFactory.getSort(3);
+                    insertionSortDisplay.displaySortedArr();
+                    break;
+
+                case 4:
+                    SortManager selectionSortDisplay = sortFactory.getSort(3);
+                    selectionSortDisplay.displaySortedArr();
+                    break;
+
                 default:
                     System.out.println("Please select a number between 0-5");
                     break;

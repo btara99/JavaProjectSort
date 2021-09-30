@@ -1,8 +1,6 @@
 package com.sparta.sorterProject.controller;
 
-import com.sparta.sorterProject.model.BubbleSort;
-import com.sparta.sorterProject.model.MergeSort;
-import com.sparta.sorterProject.model.QuickSort;
+import com.sparta.sorterProject.model.*;
 
 public class SortFactory {
     public SortManager getSort(int typeSort) {
@@ -15,9 +13,12 @@ public class SortFactory {
         else if(typeSort == 2){
             return new QuickSort();
         }
-//     else if(typeSort == 3){
-//            return new InsertionSort();
-//        }
+        else if(typeSort == 3){
+            return new InsertionSort();
+        }
+        else if(typeSort == 4){
+            return new SelectionSort();
+        }
         return null;
     }
 }
