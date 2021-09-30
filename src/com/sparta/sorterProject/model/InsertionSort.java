@@ -24,8 +24,6 @@ public class InsertionSort implements SortManager {
         return Arrays.toString(arr);
     }
 
-
-
     public void displaySortedArr() {
         //DISPLAY SORTED ARRAY
         double startTime = System.nanoTime();
