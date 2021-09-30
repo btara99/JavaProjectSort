@@ -39,7 +39,7 @@ public class DriverClass {
                     break;
 
                 case 4:
-                    SortManager selectionSortDisplay = sortFactory.getSort(3);
+                    SortManager selectionSortDisplay = sortFactory.getSort(4);
                     selectionSortDisplay.displaySortedArr();
                     break;
 
