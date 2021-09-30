@@ -1,6 +1,5 @@
 package com.sparta.sorterProject;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 import static java.lang.System.*;
@@ -21,15 +20,19 @@ public class DriverClass {
                 SortManager bubbleSortDisplay = sortFactory.getSort(0);
                 bubbleSortDisplay.displaySortedArr();
                 break;
+                case 1:
+                    SortManager mergeSortDisplay = sortFactory.getSort(1);
+                    mergeSortDisplay.displaySortedArr();
+                    break;
 
             }
 
         }
         catch (Exception e) {
             e.printStackTrace();
+            System.out.println("Wrong input");
         }
 
-        //System.out.println(displayData.displaySorts());
 
     }
 
