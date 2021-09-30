@@ -1,8 +1,11 @@
-package com.sparta.sorterProject;
+package com.sparta.sorterProject.model;
+
+import com.sparta.sorterProject.controller.DisplayManager;
+import com.sparta.sorterProject.controller.SortManager;
 
 import java.util.Arrays;
 
-public class BubbleSort implements SortManager{
+public class BubbleSort implements SortManager {
 
     DisplayManager displayData = new DisplayManager();
     public static String bubbleSort(int[] arr){

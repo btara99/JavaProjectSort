@@ -1,4 +1,7 @@
-package com.sparta.sorterProject;
+package com.sparta.sorterProject.model;
+
+import com.sparta.sorterProject.controller.DisplayManager;
+import com.sparta.sorterProject.controller.SortManager;
 
 import java.util.Arrays;
 

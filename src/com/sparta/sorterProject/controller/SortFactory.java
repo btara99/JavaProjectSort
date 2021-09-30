@@ -1,4 +1,8 @@
-package com.sparta.sorterProject;
+package com.sparta.sorterProject.controller;
+
+import com.sparta.sorterProject.model.BubbleSort;
+import com.sparta.sorterProject.model.MergeSort;
+import com.sparta.sorterProject.model.QuickSort;
 
 public class SortFactory {
     public SortManager getSort(int typeSort) {

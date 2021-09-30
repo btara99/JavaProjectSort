@@ -1,6 +1,6 @@
-package com.sparta.sorterProject;
+package com.sparta.sorterProject.controller;
 
-import org.w3c.dom.ls.LSOutput;
+import com.sparta.sorterProject.controller.ArrayGen;
 
 import java.util.Arrays;
 import java.util.Scanner;

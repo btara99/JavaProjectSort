@@ -1,4 +1,8 @@
-package com.sparta.sorterProject;
+package com.sparta.sorterProject.view;
+
+import com.sparta.sorterProject.controller.DisplayManager;
+import com.sparta.sorterProject.controller.SortFactory;
+import com.sparta.sorterProject.controller.SortManager;
 
 import java.util.Scanner;
 import static java.lang.System.*;

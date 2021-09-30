@@ -1,6 +1,9 @@
-package com.sparta.sorterProject;
+package com.sparta.sorterProject.model;
 
-public class SelectionSort implements SortManager{
+import com.sparta.sorterProject.controller.DisplayManager;
+import com.sparta.sorterProject.controller.SortManager;
+
+public class SelectionSort implements SortManager {
     DisplayManager displayData = new DisplayManager();
 
 
