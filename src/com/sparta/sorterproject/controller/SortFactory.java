@@ -1,6 +1,6 @@
-package com.sparta.sorterProject.controller;
+package com.sparta.sorterproject.controller;
 
-import com.sparta.sorterProject.model.*;
+import com.sparta.sorterproject.model.*;
 
 public class SortFactory {
     public SortManager getSort(int typeSort) {

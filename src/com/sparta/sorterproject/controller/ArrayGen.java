@@ -1,6 +1,6 @@
-package com.sparta.sorterProject.controller;
+package com.sparta.sorterproject.controller;
 
-import com.sparta.sorterProject.view.DriverClass;
+import com.sparta.sorterproject.view.DriverClass;
 
 import java.util.Random;
 

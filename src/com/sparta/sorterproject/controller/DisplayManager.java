@@ -1,6 +1,4 @@
-package com.sparta.sorterProject.controller;
-
-import com.sparta.sorterProject.controller.ArrayGen;
+package com.sparta.sorterproject.controller;
 
 import java.util.Arrays;
 import java.util.Scanner;

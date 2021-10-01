@@ -1,4 +1,4 @@
-package com.sparta.sorterProject.controller;
+package com.sparta.sorterproject.controller;
 
 public interface SortManager {
     void displaySortedArr();
